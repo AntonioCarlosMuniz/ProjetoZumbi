@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\ControlaCamera.cs" />
+     <Compile Include="Assets\Scripts\ControlaInimigo.cs" />
      <Compile Include="Assets\Scripts\ControlaJogador.cs" />
      <None Include="Assets\Modelos3D\Personagens\Animacoes\Animacoes.txt" />
      <None Include="Assets\Modelos3D\Personagens\Animacoes\Animacoes_Zumbi.txt" />
@@ -63,11 +64,11 @@
  <Reference Include="Unity.PackageManagerUI.Editor">
  <HintPath>C:/Users/antoniojunior/Desktop/ApocalipseZumbi/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
- <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/antoniojunior/Desktop/ApocalipseZumbi/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
- </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
  <HintPath>C:/Users/antoniojunior/Desktop/ApocalipseZumbi/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.TextMeshPro">
+ <HintPath>C:/Users/antoniojunior/Desktop/ApocalipseZumbi/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
  <HintPath>C:/Users/antoniojunior/Desktop/ApocalipseZumbi/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
