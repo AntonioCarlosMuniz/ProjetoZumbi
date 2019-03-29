@@ -628,6 +628,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40ebe3162ff0ece44b038bafe403eab0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Jogador: {fileID: 0}
+  Velocidade: 5
 --- !u!54 &6809918292874804547
 Rigidbody:
   m_ObjectHideFlags: 0
