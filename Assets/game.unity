@@ -514,6 +514,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1586239219675738, guid: a7ec41ca7dff1c44d90f84ef0c73af67, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4600202271103014, guid: a7ec41ca7dff1c44d90f84ef0c73af67, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0
@@ -674,6 +678,10 @@ PrefabInstance:
       propertyPath: CanoArma
       value: 
       objectReference: {fileID: 550403593}
+    - target: {fileID: 304780114, guid: 4b3bb44effa49480d8d18049684cc33a, type: 3}
+      propertyPath: MascaraChao.m_Bits
+      value: 256
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b3bb44effa49480d8d18049684cc33a, type: 3}
 --- !u!1001 &1532899329
