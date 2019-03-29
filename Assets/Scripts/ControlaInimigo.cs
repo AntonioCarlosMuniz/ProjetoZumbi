@@ -5,6 +5,8 @@ using UnityEngine;
 public class ControlaInimigo : MonoBehaviour
 {
     public GameObject Jogador;
+    public float Velocidade = 5;
+
     void Start()
     {
         
@@ -18,9 +20,9 @@ public class ControlaInimigo : MonoBehaviour
 
     void FixedUpdate()
     {
-        //Vector3 de
+        Vector3 direcao = Jogador.transform.position - transform.position;
         GetComponent<Rigidbody>().MovePosition
             (GetComponent<Rigidbody>().position +
-            Jogador.transform.position);
+            direcao.normalized * Velocidade * Time.deltaTime);
     }
 }
