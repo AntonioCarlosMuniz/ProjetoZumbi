@@ -9,7 +9,9 @@ public class ControlaInimigo : MonoBehaviour
 
     void Start()
     {
-        
+        Jogador = GameObject.FindWithTag("Jogador");
+        int geraTipoZumbi = Random.Range(1, 28);
+        transform.GetChild(geraTipoZumbi).gameObject.SetActive(true);
     }
 
     // Update is called once per frame

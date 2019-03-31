@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\ControlaCamera.cs" />
      <Compile Include="Assets\Scripts\ControlaInimigo.cs" />
      <Compile Include="Assets\Scripts\ControlaJogador.cs" />
+     <Compile Include="Assets\Scripts\GeradorZumbi.cs" />
      <None Include="Assets\Modelos3D\Personagens\Animacoes\Animacoes.txt" />
      <None Include="Assets\Modelos3D\Personagens\Animacoes\Animacoes_Zumbi.txt" />
  <Reference Include="Unity.TextMeshPro.Editor">
