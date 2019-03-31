@@ -8,15 +8,12 @@ public class ControlaJogador : MonoBehaviour {
     Vector3 direcao;
     public LayerMask MascaraChao;
 
-    // Update is called once per frame
     void Update () {
 
         float eixoX = Input.GetAxis("Horizontal");
         float eixoZ = Input.GetAxis("Vertical");
 
         direcao = new Vector3(eixoX, 0, eixoZ);
-
-        //transform.Translate(direcao * 10 * Time.deltaTime);
 
         if(direcao != Vector3.zero)
         {
