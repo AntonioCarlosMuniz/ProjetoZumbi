@@ -94,7 +94,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 498}
   m_MaxSize: {x: 18008, y: 14048}
   vertical: 0
-  controlID: 29
+  controlID: 118
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -376,7 +376,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewResizer:
-    m_CachedPref: -198
+    m_CachedPref: 135
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
@@ -626,9 +626,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -25.204304, y: -26.56802, z: -21.169693}
+    m_Target: {x: -21.752178, y: 47.875595, z: -49.03856}
     speed: 2
-    m_Value: {x: -25.204304, y: -26.56802, z: -21.169693}
+    m_Value: {x: -21.752178, y: 47.875595, z: -49.03856}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -656,19 +656,19 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.5697635, y: 0.0012165831, z: -0.0008434998, w: -0.82180744}
+    m_Target: {x: -0.2942877, y: 0.007149045, z: -0.0022014587, w: -0.95568764}
     speed: 2
-    m_Value: {x: -0.5697635, y: 0.0012165831, z: -0.0008434998, w: -0.82180744}
+    m_Value: {x: -0.2942877, y: 0.007149045, z: -0.0022014587, w: -0.95568764}
   m_Size:
-    m_Target: 65.317215
+    m_Target: 11.868352
     speed: 2
-    m_Value: 65.317215
+    m_Value: 11.868352
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_ShowGlobalGrid: 1
-  m_LastSceneViewRotation: {x: 0.333965, y: 0.46844974, z: -0.19707459, w: 0.79384124}
+  m_LastSceneViewRotation: {x: -0.2942877, y: 0.007149045, z: -0.0022014587, w: -0.95568764}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -703,23 +703,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: d0fbffff
+      m_SelectedIDs: c2340000
+      m_LastClickedID: 13506
+      m_ExpandedIDs: 4af4ffff56f4ffffd0fbffff3435000040350000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Text
+        m_OriginalName: Text
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 13562
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 9}
       m_SearchString: 

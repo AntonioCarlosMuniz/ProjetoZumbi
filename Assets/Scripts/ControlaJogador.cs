@@ -12,6 +12,7 @@ public class ControlaJogador : MonoBehaviour {
     private Rigidbody rigidbodyJogador;
     private Animator animatorJogador;
     public int Vida = 100;
+    public ControlaInterface scriptControlaInterface;
 
     void Start()
     {
@@ -68,6 +69,7 @@ public class ControlaJogador : MonoBehaviour {
     public void TomarDano(int dano)
     {
         Vida -= dano;
+        scriptControlaInterface.AtualizarSliderVidaJogador();
 
         if (Vida <= 0)
         {
