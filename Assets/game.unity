@@ -5359,6 +5359,11 @@ PrefabInstance:
       propertyPath: CanoArma
       value: 
       objectReference: {fileID: 550403593}
+    - target: {fileID: 1820896299627166912, guid: 4b3bb44effa49480d8d18049684cc33a,
+        type: 3}
+      propertyPath: SomDoTiro
+      value: 
+      objectReference: {fileID: 8300000, guid: 73d2cb2fdc0d8e1478542293b338ef35, type: 3}
     - target: {fileID: 304780114, guid: 4b3bb44effa49480d8d18049684cc33a, type: 3}
       propertyPath: MascaraChao.m_Bits
       value: 256
@@ -5371,6 +5376,10 @@ PrefabInstance:
       propertyPath: scriptControlaInterface
       value: 
       objectReference: {fileID: 980423810}
+    - target: {fileID: 304780114, guid: 4b3bb44effa49480d8d18049684cc33a, type: 3}
+      propertyPath: SomDeCano
+      value: 
+      objectReference: {fileID: 8300000, guid: 0f8fb82fde81e8147a39037ebae45b28, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b3bb44effa49480d8d18049684cc33a, type: 3}
 --- !u!1001 &1489283261

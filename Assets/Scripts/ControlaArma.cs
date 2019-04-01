@@ -6,6 +6,7 @@ public class ControlaArma : MonoBehaviour
 {
     public GameObject Bala;
     public GameObject CanoArma;
+    public AudioClip SomDoTiro;
 
     void Start()
     {
@@ -18,6 +19,7 @@ public class ControlaArma : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             Instantiate(Bala, CanoArma.transform.position, CanoArma.transform.rotation);
+            ControlaAudio.instancia.PlayOneShot(SomDoTiro);
         }
     }
 }
