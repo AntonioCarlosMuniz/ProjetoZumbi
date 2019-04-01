@@ -13,6 +13,7 @@ public class ControlaInterface : MonoBehaviour
             .GetComponent<ControlaJogador>();
 
         SliderVidaJogador.maxValue = scriptControlaJogador.Vida;
+        AtualizarSliderVidaJogador();
     }
 
     void Update()
