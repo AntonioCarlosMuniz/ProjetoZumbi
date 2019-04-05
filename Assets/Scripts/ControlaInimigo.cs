@@ -15,8 +15,8 @@ public class ControlaInimigo : MonoBehaviour, IMatavel
     private float contadorVagar;
     private float tempoEntrePosicoesAleatorias = 4;
 
-	// Use this for initialization
-	void Start () {
+
+    void Start () {
         Jogador = GameObject.FindWithTag("Jogador");
         animacaoInimigo = GetComponent<AnimacaoPersonagem>();
         movimentaInimigo = GetComponent<MovimentoPersonagem>();

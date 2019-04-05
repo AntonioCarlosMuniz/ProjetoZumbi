@@ -8,7 +8,6 @@ public class ControlaInterface : MonoBehaviour {
     private ControlaJogador scriptControlaJogador;
     public Slider SliderVidaJogador;
 
-	// Use this for initialization
 	void Start () {
         scriptControlaJogador = GameObject.FindWithTag("Jogador")
                                 .GetComponent<ControlaJogador>();
@@ -17,7 +16,6 @@ public class ControlaInterface : MonoBehaviour {
         AtualizarSliderVidaJogador();
     }
 	
-	// Update is called once per frame
 	void Update () {
 
 	}
