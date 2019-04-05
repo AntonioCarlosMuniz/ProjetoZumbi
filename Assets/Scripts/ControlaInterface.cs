@@ -9,6 +9,7 @@ public class ControlaInterface : MonoBehaviour {
     private ControlaJogador scriptControlaJogador;
     public Slider SliderVidaJogador;
     public GameObject PainelDeGameOver;
+    public Text TextoTempoDeSobrevivencia;
 
 	void Start () {
         scriptControlaJogador = GameObject.FindWithTag("Jogador")
@@ -19,10 +20,6 @@ public class ControlaInterface : MonoBehaviour {
         Time.timeScale = 1;
     }
 
-    void Update () {
-
-	}
-
     public void AtualizarSliderVidaJogador ()
     {
         SliderVidaJogador.value = scriptControlaJogador.statusJogador.Vida;
@@ -32,6 +29,11 @@ public class ControlaInterface : MonoBehaviour {
     {
         PainelDeGameOver.SetActive(true);
         Time.timeScale = 0;
+
+        int minutos = (int)(Time.timeSinceLevelLoad / 60);
+        int segundos = (int)(Time.timeSinceLevelLoad % 60);
+        TextoTempoDeSobrevivencia.text = 
+            "Você sobreviveu por " + minutos + "min e " + segundos + "s"; 
     }
 
     public void Reiniciar()
