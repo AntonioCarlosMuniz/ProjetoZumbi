@@ -1,8 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ControlaJogador : MonoBehaviour, IMatavel
+public class ControlaJogador : MonoBehaviour, IMatavel, ICuravel
 {
 
     private Vector3 direcao;
@@ -54,5 +55,15 @@ public class ControlaJogador : MonoBehaviour, IMatavel
     public void Morrer ()
     {
         scriptControlaInterface.GameOver();
+    }
+
+    public void CurarVida (int quantidadeDeCura)
+    {
+        statusJogador.Vida += quantidadeDeCura;
+        if(statusJogador.Vida > statusJogador.VidaInicial)
+        {
+            statusJogador.Vida = statusJogador.VidaInicial;
+        }
+        scriptControlaInterface.AtualizarSliderVidaJogador();
     }
 }
