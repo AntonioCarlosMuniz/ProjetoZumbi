@@ -2,30 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bala : MonoBehaviour
-{
+public class Bala : MonoBehaviour {
+
     public float Velocidade = 20;
     private Rigidbody rigidbodyBala;
     public AudioClip SomDeMorte;
 
-    void Start()
+    private void Start()
     {
         rigidbodyBala = GetComponent<Rigidbody>();
     }
 
-    void FixedUpdate()
-    {
+    // Update is called once per frame
+    void FixedUpdate () {
         rigidbodyBala.MovePosition
-            (rigidbodyBala.position +
+            (rigidbodyBala.position + 
             transform.forward * Velocidade * Time.deltaTime);
-    }
+	}
 
-    void OnTriggerEnter(Collider objetoColisao)
+    void OnTriggerEnter(Collider objetoDeColisao)
     {
-        if (objetoColisao.tag == "Inimigo")
+        if(objetoDeColisao.tag == "Inimigo")
         {
-            Destroy(objetoColisao.gameObject);
-            ControlaAudio.instancia.PlayOneShot(SomDeMorte);
+            objetoDeColisao.GetComponent<ControlaInimigo>().TomarDano(1);
         }
 
         Destroy(gameObject);

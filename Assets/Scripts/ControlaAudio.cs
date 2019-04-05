@@ -7,7 +7,7 @@ public class ControlaAudio : MonoBehaviour
     private AudioSource meuAudioSource;
     public static AudioSource instancia;
 
-    void Awake()
+    void Awake ()
     {
         meuAudioSource = GetComponent<AudioSource>();
         instancia = meuAudioSource;

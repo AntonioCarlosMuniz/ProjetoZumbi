@@ -2,24 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ControlaArma : MonoBehaviour
-{
+public class ControlaArma : MonoBehaviour {
+
     public GameObject Bala;
-    public GameObject CanoArma;
+    public GameObject CanoDaArma;
     public AudioClip SomDoTiro;
 
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetButtonDown("Fire1"))
+	// Use this for initialization
+	void Start () {
+		
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		if(Input.GetButtonDown("Fire1"))
         {
-            Instantiate(Bala, CanoArma.transform.position, CanoArma.transform.rotation);
+            Instantiate(Bala, CanoDaArma.transform.position, CanoDaArma.transform.rotation);
             ControlaAudio.instancia.PlayOneShot(SomDoTiro);
         }
-    }
+	}
 }
