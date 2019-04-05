@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4748218072112664}
   - component: {fileID: 33571407626955658}
   - component: {fileID: 23418048928496590}
-  - component: {fileID: 7878908667958259534}
+  - component: {fileID: 913059291}
   m_Layer: 8
   m_Name: Rua_T
   m_TagString: Untagged
@@ -78,7 +78,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &7878908667958259534
+--- !u!64 &913059291
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

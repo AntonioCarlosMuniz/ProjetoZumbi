@@ -10,7 +10,10 @@ public class ControlaInterface : MonoBehaviour {
     public Slider SliderVidaJogador;
     public GameObject PainelDeGameOver;
     public Text TextoTempoDeSobrevivencia;
+    public Text TextoPontuacaoMaxima;
+    private float tempoPontuacaoSalvo;
 
+	// Use this for initialization
 	void Start () {
         scriptControlaJogador = GameObject.FindWithTag("Jogador")
                                 .GetComponent<ControlaJogador>();
@@ -18,6 +21,7 @@ public class ControlaInterface : MonoBehaviour {
         SliderVidaJogador.maxValue = scriptControlaJogador.statusJogador.Vida;
         AtualizarSliderVidaJogador();
         Time.timeScale = 1;
+        tempoPontuacaoSalvo = PlayerPrefs.GetFloat("PontuacaoMaxima");
     }
 
     public void AtualizarSliderVidaJogador ()
@@ -25,7 +29,7 @@ public class ControlaInterface : MonoBehaviour {
         SliderVidaJogador.value = scriptControlaJogador.statusJogador.Vida;
     }
 
-    public void GameOver()
+    public void GameOver ()
     {
         PainelDeGameOver.SetActive(true);
         Time.timeScale = 0;
@@ -33,10 +37,30 @@ public class ControlaInterface : MonoBehaviour {
         int minutos = (int)(Time.timeSinceLevelLoad / 60);
         int segundos = (int)(Time.timeSinceLevelLoad % 60);
         TextoTempoDeSobrevivencia.text = 
-            "Você sobreviveu por " + minutos + "min e " + segundos + "s"; 
+            "Você sobreviveu por " + minutos + "min e " + segundos + "s";
+
+        AjustarPontuacaoMaxima(minutos, segundos);
     }
 
-    public void Reiniciar()
+    void AjustarPontuacaoMaxima (int min, int seg)
+    {
+        if(Time.timeSinceLevelLoad > tempoPontuacaoSalvo)
+        {
+            tempoPontuacaoSalvo = Time.timeSinceLevelLoad;
+            TextoPontuacaoMaxima.text = 
+                string.Format("Seu melhor tempo é {0}min e {1}s", min, seg);
+            PlayerPrefs.SetFloat("PontuacaoMaxima", tempoPontuacaoSalvo);
+        }
+        if(TextoPontuacaoMaxima.text == "")
+        {
+            min = (int)tempoPontuacaoSalvo / 60;
+            seg = (int)tempoPontuacaoSalvo % 60;
+            TextoPontuacaoMaxima.text =
+                string.Format("Seu melhor tempo é {0}min e {1}s", min, seg);
+        }
+    }
+
+    public void Reiniciar ()
     {
         SceneManager.LoadScene("game");
     }

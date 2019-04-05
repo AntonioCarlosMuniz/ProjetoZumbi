@@ -21,6 +21,7 @@ public class ControlaJogador : MonoBehaviour, IMatavel
         statusJogador = GetComponent<Status>();
     }
 
+    // Update is called once per frame
     void Update()
     {
 
@@ -49,6 +50,7 @@ public class ControlaJogador : MonoBehaviour, IMatavel
             Morrer();
         }        
     }
+
     public void Morrer ()
     {
         scriptControlaInterface.GameOver();

@@ -15,8 +15,8 @@ public class ControlaInimigo : MonoBehaviour, IMatavel
     private float contadorVagar;
     private float tempoEntrePosicoesAleatorias = 4;
 
-
-    void Start () {
+	// Use this for initialization
+	void Start () {
         Jogador = GameObject.FindWithTag("Jogador");
         animacaoInimigo = GetComponent<AnimacaoPersonagem>();
         movimentaInimigo = GetComponent<MovimentoPersonagem>();
@@ -45,6 +45,8 @@ public class ControlaInimigo : MonoBehaviour, IMatavel
         }
         else
         {
+            direcao = Jogador.transform.position - transform.position;
+
             animacaoInimigo.Atacar(true);
         }
     }

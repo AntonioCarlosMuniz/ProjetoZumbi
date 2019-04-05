@@ -8,12 +8,13 @@ public class ControlaArma : MonoBehaviour {
     public GameObject CanoDaArma;
     public AudioClip SomDoTiro;
 
-
-    void Start () {
+	// Use this for initialization
+	void Start () {
 		
 	}
-
-    void Update () {
+	
+	// Update is called once per frame
+	void Update () {
 		if(Input.GetButtonDown("Fire1"))
         {
             Instantiate(Bala, CanoDaArma.transform.position, CanoDaArma.transform.rotation);
