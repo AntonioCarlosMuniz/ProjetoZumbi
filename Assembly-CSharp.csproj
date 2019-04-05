@@ -64,7 +64,6 @@
      <Compile Include="Assets\Scripts\GeradorZumbi.cs" />
      <Compile Include="Assets\Scripts\GeradorZumbis.cs" />
      <Compile Include="Assets\Scripts\IMatavel.cs" />
-     <Compile Include="Assets\Scripts\Movimentacao.cs" />
      <Compile Include="Assets\Scripts\MovimentoJogador.cs" />
      <Compile Include="Assets\Scripts\MovimentoPersonagem.cs" />
      <Compile Include="Assets\Scripts\Status.cs" />
