@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AnimacaoPersonagem">
+    <Position X="21.5" Y="1.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAACAABAAAEA=</HashCode>
+      <FileName>Assets\Scripts\AnimacaoPersonagem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Bala">
+    <Position X="16.75" Y="1.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAiAAAIAAAAAAAAAAAAIAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Bala.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlaArma">
+    <Position X="12" Y="1.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Assets\Scripts\ControlaArma.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlaAudio">
+    <Position X="16.75" Y="4.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAEAEA=</HashCode>
+      <FileName>Assets\Scripts\ControlaAudio.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlaCamera">
+    <Position X="8" Y="1.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACABAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ControlaCamera.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlaChefe" BaseTypeListCollapsed="true">
+    <Position X="12" Y="9" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>ABQAAIAAACAAAQAAJAAAADAAAAABAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ControlaChefe.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Left" Position="0.251" />
+  </Class>
+  <Class Name="ControlaInimigo" BaseTypeListCollapsed="true">
+    <Position X="8" Y="9.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAQIAAAiQgAIAAMAAAgBUQAIEAAACAAggAAAAAQAk=</HashCode>
+      <FileName>Assets\Scripts\ControlaInimigo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Left" Position="0.749" />
+  </Class>
+  <Class Name="ControlaInterface">
+    <Position X="12" Y="4.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAEAgAAIACAAAAAAQAABAAAAEAIBAAAIAAAAAAAQAEI=</HashCode>
+      <FileName>Assets\Scripts\ControlaInterface.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ControlaJogador" BaseTypeListCollapsed="true">
+    <Position X="8" Y="4.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAiAAABABYBAAAAAQACAQAACAAAAAAQAAQAA=</HashCode>
+      <FileName>Assets\Scripts\ControlaJogador.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Left" Position="3.792" />
+  </Class>
+  <Class Name="GeradorChefe">
+    <Position X="12" Y="13" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAQCAAAAACAAAAAAAAAAACAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\GeradorChefe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GeradorZumbi">
+    <Position X="16.75" Y="13" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>IAQAAAAAACAAAAAAAAAQAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\GeradorZumbi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GeradorZumbis">
+    <Position X="16.75" Y="7.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>IAYEQAAAACAAAYAgBAAQAACABAAAAAQEAEAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\GeradorZumbis.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KitMedico">
+    <Position X="21.25" Y="10.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAEAAAAAAAAASAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\KitMedico.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MovimentoJogador">
+    <Position X="4.25" Y="5.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\MovimentoJogador.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MovimentoPersonagem">
+    <Position X="4.5" Y="1.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAIEAAAAAAAAAAAgAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\MovimentoPersonagem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Status">
+    <Position X="23.25" Y="6" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAIAQAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Status.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="ICuravel">
+    <Position X="4.25" Y="10.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ICuravel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="IMatavel">
+    <Position X="4.25" Y="8.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\IMatavel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
